@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Name</title>
+    <!-- Include jQuery dependency -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include CodeHS standard graphics/console sandbox library wrapper -->
+    <script type="text/javascript" src="https://static.codehs.com/gulp/71e31662a311579278c7b569c2b4060584c2b76e/chs-js-lib/chs.js"></script>
+    
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: inline-block;
+            vertical-align: top;
+        }
+        pre {
+            border: 1px solid black;
+            display: inline-block;
+            width: 400px;
+            height: 500px;
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Graphics output canvas (400x500 viewport default) -->
+    <canvas width="400" height="500" class="codehs-editor-canvas"></canvas>
+    
+    <!-- Text standard output console -->
+    <pre id="console"></pre>
+
+    <script>
+        window.onload = function() {
+            // Your CodeHS API program logic goes here!
+            // Example:
+             var circle = new Circle(30);
+             circle.setPosition(200, 250);
+             circle.setColor(Color.red);
+             add(circle);
+             println("Hello, CodeHS!");
+        };
+    </script>
+</body>
+</html>
